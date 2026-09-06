@@ -125,7 +125,7 @@ public partial class MainWindow
 			MarketData =
 			{
 				BuildMode = MarketDataBuildModes.LoadAndBuild,
-				From = DateTime.Today.Subtract(TimeSpan.FromDays(30)),
+				From = DateTime.UtcNow.Date.Subtract(TimeSpan.FromDays(30)),
 			}
 		};
 

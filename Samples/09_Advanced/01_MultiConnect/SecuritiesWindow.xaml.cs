@@ -390,7 +390,7 @@ public partial class SecuritiesWindow
 	{
 		var connector = Connector;
 
-		var settings = new Level1DatesSettings { From = DateTime.Today.AddDays(-1) };
+		var settings = new Level1DatesSettings { From = DateTime.UtcNow.Date.AddDays(-1) };
 
 		var wnd = new SettingsWindow { Settings = settings };
 
@@ -432,7 +432,7 @@ public partial class SecuritiesWindow
 	{
 		var connector = Connector;
 
-		var settings = new DatesSettings { From = DateTime.Today.AddDays(-1) };
+		var settings = new DatesSettings { From = DateTime.UtcNow.Date.AddDays(-1) };
 
 		var wnd = new SettingsWindow { Settings = settings };
 
@@ -494,7 +494,7 @@ public partial class SecuritiesWindow
 		if (range.TotalYears() > 5)
 			range = TimeSpan.FromTicks(TimeHelper.TicksPerYear * 5);
 
-		var settings = new DatesSettings { From = DateTime.Today - range };
+		var settings = new DatesSettings { From = DateTime.UtcNow.Date - range };
 
 		var wnd = new SettingsWindow { Settings = settings };
 
