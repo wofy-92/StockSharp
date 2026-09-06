@@ -36,6 +36,7 @@
     <SignalRVer>2.4.3</SignalRVer>
     <NuGetApiVer>7.0.1</NuGetApiVer>
     <SpectreVer>0.48.0</SpectreVer>
+    <McpVer>2.*</McpVer>
     <AWSSDKVer>4.*</AWSSDKVer>
     <GeneticSharpVer>3.1.4</GeneticSharpVer>
     <SharpPcapVer>6.3.0</SharpPcapVer>
